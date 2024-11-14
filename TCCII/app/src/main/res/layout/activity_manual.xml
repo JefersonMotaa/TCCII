@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:keepScreenOn="true"
+    tools:context="com.duo.superior.duo.ManualActivity">
+
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Acionamento Manual "
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnManVoltar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFF00"
+        android:text="VOLTAR"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnManTroca"
+        android:layout_width="135dp"
+        android:layout_height="80dp"
+        android:background="@android:color/darker_gray"
+        android:text="troca\nEletrodo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnManJato"
+        app:layout_constraintTop_toBottomOf="@+id/btnManExpulsa"
+        app:srcCompat="@drawable/led_cinza" />
+
+    <Button
+        android:id="@+id/btnManJato"
+        android:layout_width="135dp"
+        android:layout_height="80dp"
+        android:background="@android:color/darker_gray"
+        android:text="Jato d'água"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnManTroca"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnManGarra"
+        app:srcCompat="@drawable/led_cinza" />
+
+    <Button
+        android:id="@+id/btnManGarra"
+        android:layout_width="135dp"
+        android:layout_height="80dp"
+        android:background="@android:color/darker_gray"
+        android:text="Garra"
+        app:layout_constraintBottom_toTopOf="@+id/btnManJato"
+        app:layout_constraintEnd_toStartOf="@+id/btnManExpulsa"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView91"
+        app:srcCompat="@drawable/led_cinza" />
+
+    <Button
+        android:id="@+id/btnManExpulsa"
+        android:layout_width="135dp"
+        android:layout_height="80dp"
+        android:background="@android:color/darker_gray"
+        android:text="Expulsa\nEletrodo"
+        app:layout_constraintBottom_toTopOf="@+id/btnManTroca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnManGarra"
+        app:layout_constraintTop_toBottomOf="@+id/textView91"
+        app:srcCompat="@drawable/led_cinza" />
+
+
+</android.support.constraint.ConstraintLayout>

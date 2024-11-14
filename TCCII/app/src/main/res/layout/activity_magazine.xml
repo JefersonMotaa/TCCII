@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:keepScreenOn="true"
+    tools:context="com.duo.superior.duo.MagazineActivity">
+
+    <Button
+        android:id="@+id/btnMagDesliga"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="DESLIGA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnMagReabastece"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMagLiga"
+        app:layout_constraintTop_toBottomOf="@+id/imgStatusMag" />
+
+    <Button
+        android:id="@+id/btnMagLiga"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:text="LIGA"
+        app:layout_constraintEnd_toStartOf="@+id/btnMagDesliga"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnMagDesliga" />
+
+    <Button
+        android:id="@+id/btnMagReabastece"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:text="Reabaste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMagDesliga"
+        app:layout_constraintTop_toTopOf="@+id/btnMagDesliga" />
+
+    <ImageView
+        android:id="@+id/imgStatusMag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btnMagDesliga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView45"
+        app:srcCompat="@drawable/led_cinza"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnMagVoltar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEletrodoCalc"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFF00"
+        android:text="VOLTAR"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="MAGAZINE"
+        android:textColor="#ffffff"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvStatusMag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desligado"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusMag"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusMag"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusMag"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusMag" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.duo.com.duo">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/duot"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.duo.superior.duo.MagazineActivity"
+            android:exported="false"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.duo.superior.duo.EditarActivity"
+            android:exported="false"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.duo.superior.duo.SNumSerieActivity"
+            android:exported="false"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.duo.superior.duo.PassoRotinaActivity"
+            android:exported="false"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.duo.superior.duo.ReferenciaCG"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.Rede"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.Configuracoes"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.ManutencaoActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.VelOp"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.VelRef"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.PosicoesActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.InicioRapidoActivity7"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.InicioRapidoActivity6"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.InicioRapidoActivity5"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.InicioRapidoActivity4"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.InicioRapidoActivity3"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.InicioRapidoActivity2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.InicioRapidoActivity1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.InicioRapidoActivity0"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.MotoresActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.ManualActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.OsciladorActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.JatoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.ScanActivity"
+            android:label="@string/title_activity_scan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.duo.superior.duo.AcompanhamentoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.CamisaActivity"
+            android:screenOrientation="landscape" />
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="receitas.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.example.lia9atb.duo" />
+
+        <activity
+            android:name="com.duo.superior.duo.OperacaoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.Eletrodos"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.duo.superior.duo.ReferenciaActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.ReceitaActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.duo.superior.duo.ParametrosActivity"
+            android:screenOrientation="landscape"/>
+    </application>
+
+</manifest>

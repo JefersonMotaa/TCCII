@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:keepScreenOn="true"
+    tools:context="com.duo.superior.duo.ReferenciaCG">
+
+    <Button
+        android:id="@+id/btnRefCJog"
+        android:layout_width="228dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/amareloBotao"
+        android:text="JOG"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRefcVoltar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEletrodoCalc"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFF00"
+        android:text="VOLTAR"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tVMID2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Referência C0"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRefC"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnREsqueceC"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Esquece Referência C0"
+        app:layout_constraintBottom_toTopOf="@+id/btnRGravarC"
+        app:layout_constraintEnd_toEndOf="@+id/btnCGHC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnCGHC"
+        app:layout_constraintTop_toBottomOf="@+id/btnCGHC" />
+
+    <Button
+        android:id="@+id/btnRGravarC"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Gravar Referência C0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnREsqueceC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnREsqueceC"
+        app:layout_constraintTop_toBottomOf="@+id/btnREsqueceC" />
+
+    <Button
+        android:id="@+id/btnCGHC"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        android:text="Home C"
+        app:layout_constraintBottom_toTopOf="@+id/btnREsqueceC"
+        app:layout_constraintEnd_toEndOf="@+id/tvRefC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tvRefC"
+        app:layout_constraintTop_toBottomOf="@+id/tvRefC" />
+
+    <TextView
+        android:id="@+id/tvRefC"
+        android:layout_width="340dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:text="Referência atual C0:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCGHC"
+        app:layout_constraintEnd_toEndOf="@+id/tVMID2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tVMID2"
+        app:layout_constraintTop_toBottomOf="@+id/tVMID2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Referência G0"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRefG"
+        app:layout_constraintEnd_toStartOf="@+id/btnRefCJog"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tVMID2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRefG"
+        android:layout_width="340dp"
+        android:layout_height="36dp"
+        android:text="Referência autal G0:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCGHG"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/btnCGHG"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        android:text="Home G"
+        app:layout_constraintBottom_toTopOf="@+id/btnREsqueceG"
+        app:layout_constraintEnd_toEndOf="@+id/tvRefG"
+        app:layout_constraintStart_toStartOf="@+id/tvRefG"
+        app:layout_constraintTop_toBottomOf="@+id/tvRefG" />
+
+    <Button
+        android:id="@+id/btnREsqueceG"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Esquece referência G0"
+        app:layout_constraintBottom_toTopOf="@+id/btnRGravarG"
+        app:layout_constraintEnd_toEndOf="@+id/btnCGHG"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnCGHG"
+        app:layout_constraintTop_toBottomOf="@+id/btnCGHG" />
+
+    <Button
+        android:id="@+id/btnRGravarG"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Grava Referência G0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnREsqueceG"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnREsqueceG"
+        app:layout_constraintTop_toBottomOf="@+id/btnREsqueceG" />
+
+</android.support.constraint.ConstraintLayout>

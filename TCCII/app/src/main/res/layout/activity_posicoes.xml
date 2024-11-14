@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:keepScreenOn="true"
+    tools:context=".PosicoesActivity"
+    tools:visibility="visible">
+
+
+    <include layout="@layout/jog_control" />
+
+
+    <ScrollView
+        android:id="@+id/scrolViewRoloEntrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="100px" />
+
+            <LinearLayout
+                android:id="@+id/llP1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtP1"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:maxHeight="50dp"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edtP1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/retangulo"
+                    android:inputType="number"
+                    android:paddingLeft="10dip"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btnP1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="REGISTRAR" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="100px" />
+
+            <LinearLayout
+                android:id="@+id/llP2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtP2"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+
+                <EditText
+                    android:id="@+id/edtP2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/retangulo"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="10dip"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtP2"
+                    app:layout_constraintStart_toEndOf="@+id/txtP2"
+                    app:layout_constraintTop_toTopOf="@+id/txtP2"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/btnP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="REGISTRAR" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="100px" />
+
+            <LinearLayout
+                android:id="@+id/llP3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtP3"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtP2"
+                    app:layout_constraintTop_toBottomOf="@+id/txtP2" />
+
+                <EditText
+                    android:id="@+id/edtP3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/retangulo"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:paddingLeft="10dip"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtP3"
+                    app:layout_constraintStart_toEndOf="@+id/txtP3"
+                    app:layout_constraintTop_toTopOf="@+id/txtP3" />
+
+                <Button
+                    android:id="@+id/btnP3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="REGISTRAR"
+                    app:layout_constraintBottom_toBottomOf="@+id/edtP3"
+                    app:layout_constraintStart_toEndOf="@+id/edtP3"
+                    app:layout_constraintTop_toTopOf="@+id/edtP3" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="100px" />
+
+            <LinearLayout
+                android:id="@+id/llP4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtP4"
+                    android:layout_width="150dp"
+
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtP3"
+                    app:layout_constraintTop_toBottomOf="@+id/txtP3" />
+
+                <EditText
+                    android:id="@+id/edtP4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/retangulo"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:paddingLeft="10dip"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtP4"
+                    app:layout_constraintStart_toEndOf="@+id/txtP4"
+                    app:layout_constraintTop_toTopOf="@+id/txtP4" />
+
+                <Button
+                    android:id="@+id/btnP4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="REGISTRAR"
+                    app:layout_constraintBottom_toBottomOf="@+id/edtP4"
+                    app:layout_constraintStart_toEndOf="@+id/edtP4"
+                    app:layout_constraintTop_toTopOf="@+id/edtP4" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="100px" />
+
+            <LinearLayout
+                android:id="@+id/llP5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtP5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtP4"
+                    app:layout_constraintTop_toBottomOf="@+id/txtP4" />
+
+                <EditText
+                    android:id="@+id/edtP5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/retangulo"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="10dip"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtP5"
+                    app:layout_constraintStart_toEndOf="@+id/txtP5"
+                    app:layout_constraintTop_toTopOf="@+id/txtP5"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/btnP5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="REGISTRAR"
+                    app:layout_constraintBottom_toBottomOf="@+id/edtP5"
+                    app:layout_constraintStart_toEndOf="@+id/edtP5"
+                    app:layout_constraintTop_toTopOf="@+id/edtP5" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="100px" />
+
+            <LinearLayout
+                android:id="@+id/llP6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtP6"
+
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtP5"
+                    app:layout_constraintTop_toBottomOf="@+id/txtP5" />
+
+                <EditText
+                    android:id="@+id/edtP6"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/retangulo"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="10dip"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtP6"
+                    app:layout_constraintStart_toEndOf="@+id/txtP6"
+                    app:layout_constraintTop_toTopOf="@+id/txtP6"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/btnP6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="REGISTRAR"
+                    app:layout_constraintBottom_toBottomOf="@+id/edtP6"
+                    app:layout_constraintStart_toEndOf="@+id/edtP6"
+                    app:layout_constraintTop_toTopOf="@+id/edtP6" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="100px" />
+
+            <LinearLayout
+                android:id="@+id/llP7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txtP7"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtP6"
+                    app:layout_constraintTop_toBottomOf="@+id/txtP6" />
+
+                <EditText
+                    android:id="@+id/edtP7"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/retangulo"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:paddingLeft="10dip"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtP7"
+                    app:layout_constraintStart_toEndOf="@+id/txtP7"
+                    app:layout_constraintTop_toTopOf="@+id/txtP7" />
+
+                <Button
+                    android:id="@+id/btnP7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="REGISTRAR"
+                    app:layout_constraintBottom_toBottomOf="@+id/edtP7"
+                    app:layout_constraintStart_toEndOf="@+id/edtP7"
+                    app:layout_constraintTop_toTopOf="@+id/edtP7" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="100px" />
+
+            <LinearLayout
+                android:id="@+id/llP8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtP8"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtP7"
+                    app:layout_constraintTop_toBottomOf="@+id/txtP7" />
+
+                <EditText
+                    android:id="@+id/edtP8"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/retangulo"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:paddingLeft="10dip"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtP8"
+                    app:layout_constraintStart_toEndOf="@+id/txtP8"
+                    app:layout_constraintTop_toTopOf="@+id/txtP8" />
+
+                <Button
+                    android:id="@+id/btnP8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="REGISTRAR"
+                    app:layout_constraintBottom_toBottomOf="@+id/edtP8"
+                    app:layout_constraintStart_toEndOf="@+id/edtP8"
+                    app:layout_constraintTop_toTopOf="@+id/edtP8" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="100px" />
+
+            <LinearLayout
+                android:id="@+id/llP9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtP9"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtP8"
+                    app:layout_constraintTop_toBottomOf="@+id/txtP8" />
+
+                <EditText
+                    android:id="@+id/edtP9"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/retangulo"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:paddingLeft="10dip"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtP9"
+                    app:layout_constraintStart_toEndOf="@+id/txtP9"
+                    app:layout_constraintTop_toTopOf="@+id/txtP9" />
+
+                <Button
+                    android:id="@+id/btnP9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Registrar"
+                    app:layout_constraintBottom_toBottomOf="@+id/edtP9"
+                    app:layout_constraintStart_toEndOf="@+id/edtP9"
+                    app:layout_constraintTop_toTopOf="@+id/edtP9" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="100px" />
+
+            <LinearLayout
+                android:id="@+id/llP10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtP10"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtP9"
+                    app:layout_constraintTop_toBottomOf="@+id/txtP9" />
+
+                <EditText
+                    android:id="@+id/edtP10"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/retangulo"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:paddingLeft="10dip"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtP10"
+                    app:layout_constraintStart_toEndOf="@+id/txtP10"
+                    app:layout_constraintTop_toTopOf="@+id/txtP10" />
+
+                <Button
+                    android:id="@+id/btnP10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="REGISTRAR"
+                    app:layout_constraintBottom_toBottomOf="@+id/edtP10"
+                    app:layout_constraintStart_toEndOf="@+id/edtP10"
+                    app:layout_constraintTop_toTopOf="@+id/edtP10" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="100px" />
+
+            <LinearLayout
+                android:id="@+id/llP11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtP11"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtP10"
+                    app:layout_constraintTop_toBottomOf="@+id/txtP10" />
+
+                <EditText
+                    android:id="@+id/edtP11"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/retangulo"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:paddingLeft="10dip"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtP11"
+                    app:layout_constraintStart_toEndOf="@+id/txtP11"
+                    app:layout_constraintTop_toTopOf="@+id/txtP11" />
+
+                <Button
+                    android:id="@+id/btnP11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="REGISTRAR"
+                    app:layout_constraintBottom_toBottomOf="@+id/edtP11"
+                    app:layout_constraintStart_toEndOf="@+id/edtP11"
+                    app:layout_constraintTop_toTopOf="@+id/edtP11" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="500px" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="131dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/amareloBotao"
+        android:text="SALVAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPosRoloEntrada"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/gray"
+        android:text="Rolo de\nentrada / Superior"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/btnPosRoloSaida"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPosRoloSaida"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/gray"
+        android:text="Rolo de saída"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubmit"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

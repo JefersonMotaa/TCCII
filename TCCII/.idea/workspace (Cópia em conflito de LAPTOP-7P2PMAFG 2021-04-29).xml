@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="Nexus 10" />
+        <device id="Nexus 9" />
+        <device id="pixel_c" />
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="02d00a61-eb7a-407e-a456-1ebab5c03610" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RX2N7007XMJ]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Duo" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Duo" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Duo" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="android" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Duo" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Duo" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1d6sseXzuuM2pz7HXPHLjCXj6JW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DEBUGGABLE_DEVICE" value="samsung-sm_t515-RX2N7007XMJ" />
+    <property name="DEBUGGABLE_PROCESS" value="com.example.lia9atb.duo" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="RX2N7007XMJ" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-07T15:27:50.206Z" />
+    <property name="ResourceManagerPrefKey.ResourceType" value="DRAWABLE" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Properties" />
+    <option name="BUILD_VARIANTS_TAB" value="Build Types" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-708786042">
+      <recent name="com.example.lia9atb.duo" />
+    </key>
+    <key name="android.template.1920845048">
+      <recent name="com.example.lia9atb.duo" />
+    </key>
+    <key name="android.template.-1277024127">
+      <recent name="com.example.lia9atb.duo" />
+    </key>
+    <key name="android.template.1520816136">
+      <recent name="com.example.lia9atb.duo" />
+    </key>
+    <key name="android.template.-736164208">
+      <recent name="com.example.lia9atb.duo" />
+    </key>
+    <key name="android.template.1357743873">
+      <recent name="com.example.lia9atb.duo" />
+    </key>
+    <key name="android.template.1048541205">
+      <recent name="com.example.lia9atb.duo" />
+    </key>
+    <key name="android.template.882446831">
+      <recent name="com.example.lia9atb.duo" />
+    </key>
+    <key name="android.template.2341410">
+      <recent name="com.example.lia9atb.duo" />
+    </key>
+    <key name="android.template.-1752785491">
+      <recent name="com.example.lia9atb.duo" />
+    </key>
+    <key name="android.template.1534295565">
+      <recent name="com.example.lia9atb.duo" />
+    </key>
+    <key name="android.template.-69754518">
+      <recent name="com.example.lia9atb.duo" />
+    </key>
+    <key name="android.template.-1880596359">
+      <recent name="com.example.lia9atb.duo" />
+    </key>
+    <key name="android.template.-1465711105">
+      <recent name="com.example.lia9atb.duo" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="//Intent it=new Intent(OperacaoActivity.this,AcompanhamentoActivity.class);                 " />
+    </option>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Duo-app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Duo-app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Duo.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02d00a61-eb7a-407e-a456-1ebab5c03610" name="Default Changelist" comment="" />
+      <created>1591757084114</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591757084114</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="568" y="227" key="#Notifications" timestamp="1614878468475">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="568" y="227" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1614878468475" />
+    <state x="200" y="110" width="954" height="508" key="#PSD" timestamp="1618677690073">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="200" y="110" width="954" height="508" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1618677690073" />
+    <state x="392" y="0" key="#app" timestamp="1619100788089">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="392" y="0" key="#app/0.0.1366.728@0.0.1366.728" timestamp="1619100788089" />
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1618249735898">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1618249735898" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618860490468">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1618860490468" />
+    <state x="100" y="100" width="1166" height="528" key="AVDManager" timestamp="1617277128854">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="100" y="100" width="1166" height="528" key="AVDManager/0.0.1366.728@0.0.1366.728" timestamp="1617277128854" />
+    <state x="481" y="110" key="AndroidProcessChooserDialog" timestamp="1618935159592">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="481" y="110" key="AndroidProcessChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1618935159592" />
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1615559183128">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1615559183128" />
+    <state width="1322" height="222" key="GridCell.Tab.0.bottom" timestamp="1619727809846">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="222" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619727809846" />
+    <state width="1322" height="222" key="GridCell.Tab.0.center" timestamp="1619727809846">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="222" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619727809846" />
+    <state width="1322" height="222" key="GridCell.Tab.0.left" timestamp="1619727809846">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="222" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619727809846" />
+    <state width="1322" height="222" key="GridCell.Tab.0.right" timestamp="1619727809846">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="222" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619727809846" />
+    <state width="1322" height="222" key="GridCell.Tab.1.bottom" timestamp="1619727809847">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="222" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619727809847" />
+    <state width="1322" height="222" key="GridCell.Tab.1.center" timestamp="1619727809846">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="222" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1619727809846" />
+    <state width="1322" height="222" key="GridCell.Tab.1.left" timestamp="1619727809846">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="222" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1619727809846" />
+    <state width="1322" height="222" key="GridCell.Tab.1.right" timestamp="1619727809847">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="222" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1619727809847" />
+    <state x="192" y="0" key="SettingsEditor" timestamp="1618677642909">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="192" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1618677642909" />
+    <state x="404" y="104" width="570" height="524" key="StructurePopup" timestamp="1619724155978">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="404" y="104" width="570" height="524" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1619724155978" />
+    <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1618935656500">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728@0.0.1366.728" timestamp="1618935656500" />
+    <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1619719405174">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="499" y="142" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1619719405174" />
+    <state x="236" y="93" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1617725307492">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="236" y="93" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1617725307492" />
+    <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1617813215240">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1617813215240" />
+    <state x="412" y="217" key="psd.add.jar.dependency.panel.dimension" timestamp="1614193063803">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="412" y="217" key="psd.add.jar.dependency.panel.dimension/0.0.1366.728@0.0.1366.728" timestamp="1614193063803" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1618333866123">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1615084417864" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1618333866123" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1615916305079">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1615916305079" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/Memoria.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/ReferenciaActivity.java</url>
+          <line>201</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/ReferenciaActivity.java</url>
+          <line>202</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/ManutencaoActivity.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/ManutencaoActivity.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/CLP.java</url>
+          <line>659</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/ReferenciaActivity.java</url>
+          <line>324</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/ManutencaoActivity.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/ReceitaActivity.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/ReceitaActivity.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/CLP.java</url>
+          <line>676</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/ServicoComunicacao.java</url>
+          <line>519</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/OperacaoActivity.java</url>
+          <line>545</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/CamisaActivity.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-field">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lia9atb/duo/ManutencaoActivity.java</url>
+          <line>30</line>
+          <properties field="timer" class="com.example.lia9atb.duo.ManutencaoActivity" />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

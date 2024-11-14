@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul"
+    android:keepScreenOn="true"
+    tools:context="com.duo.superior.duo.Configuracoes">
+
+    <Button
+        android:id="@+id/btnConfigVoltar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFF00"
+        android:text="VOLTAR"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnInputOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="400dp"
+        android:background="#FFFF00"
+        android:text="Entradas e Saídas"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnReferenciaCG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReferenciaCG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="400dp"
+        android:background="#FFFF00"
+        android:text="Referência eixos C e G"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnParametros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInputOutput" />
+
+    <Button
+        android:id="@+id/btnParametros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="400dp"
+        android:background="#FFFF00"
+        android:text="Parâmetros"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRede"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReferenciaCG" />
+
+    <Button
+        android:id="@+id/btnRede"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="400dp"
+        android:background="#FFFF00"
+        android:text="Rede"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPassoRotinas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnParametros" />
+
+    <Button
+        android:id="@+id/btnPassoRotinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="400dp"
+        android:background="#FFFF00"
+        android:text="Acompanhamento rotinas "
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRede" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#000000"
+    tools:context="com.example.lia9atb.duo.SettingsActivity">
+
+
+    <SeekBar
+        android:id="@+id/seekBarVelJogEixoZ"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/background_light"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="@+id/textView96"
+        app:layout_constraintEnd_toStartOf="@+id/textVelX"
+        app:layout_constraintStart_toEndOf="@+id/textView96"
+        app:layout_constraintTop_toTopOf="@+id/textView96" />
+
+    <TextView
+        android:id="@+id/textView94"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:text="Velocidade JOG Eixo X:"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/textView96"
+        app:layout_constraintTop_toBottomOf="@+id/textView96" />
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:text="Velocidade JOG Eixo C:"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/textView94"
+        app:layout_constraintTop_toBottomOf="@+id/textView94" />
+
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="36dp"
+        android:text="Velocidade JOG Eixo Z:"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView95" />
+
+    <SeekBar
+        android:id="@+id/seekBarVelJogEixoX"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:max="100"
+        app:layout_constraintBottom_toBottomOf="@+id/textView94"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarVelJogEixoZ"
+        app:layout_constraintStart_toStartOf="@+id/seekBarVelJogEixoZ"
+        app:layout_constraintTop_toTopOf="@+id/textView94" />
+
+    <SeekBar
+        android:id="@+id/seekBarVelJogEixoC"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:max="100"
+        app:layout_constraintBottom_toBottomOf="@+id/textView97"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarVelJogEixoX"
+        app:layout_constraintStart_toStartOf="@+id/seekBarVelJogEixoX"
+        app:layout_constraintTop_toTopOf="@+id/textView97" />
+
+    <Button
+        android:id="@+id/btnSettingSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="24dp"
+        android:text="SALVAR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView41"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="24dp"
+        android:text="Velocidade JOG C:"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <EditText
+        android:id="@+id/edtSettingJogXZ"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:background="@drawable/retangulo"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:paddingLeft="10dp"
+        app:layout_constraintStart_toEndOf="@+id/textView41"
+        tools:layout_editor_absoluteY="590dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtSettingJogC"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/textView42"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:background="@drawable/retangulo"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:paddingLeft="10dp"
+        app:layout_constraintStart_toStartOf="@+id/edtSettingJogXZ"
+        tools:layout_editor_absoluteY="646dp"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:text="Velocidade JOG X e Z:"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="588dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="HH:mm\ndd/MM/yyyy"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ajuste de velocidades"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textVelX"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="100%"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBarVelJogEixoZ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBarVelJogEixoZ" />
+
+    <TextView
+        android:id="@+id/textVelC"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="100%"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBarVelJogEixoC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBarVelJogEixoC" />
+
+    <TextView
+        android:id="@+id/textVelZ"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="100%"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBarVelJogEixoX"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBarVelJogEixoX" />
+</android.support.constraint.ConstraintLayout>

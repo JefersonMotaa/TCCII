@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="700px"
+    android:layout_height="200px"
+    android:paddingLeft="20px"
+    tools:context=".SemInternet">
+
+    <TextView
+        android:id="@+id/textView169"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="35dp"
+        android:text="NÃO FOI POSSÍVEL CONECTAR-SE AO CLP."
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/erro"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>

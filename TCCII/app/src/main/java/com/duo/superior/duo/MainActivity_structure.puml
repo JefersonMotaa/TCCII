@@ -1,0 +1,1215 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": false,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "com.duo.superior.duo.MainActivity",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_99838 { 
+   	label=duo
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_978451617 { 
+   	label=superior
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   AcompanhamentoActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)AcompanhamentoActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   atualizar: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bD: List&lt;Button&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bE: List&lt;Button&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   colunas: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   d: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   e: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   lMemorias: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   linhas: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   llayout: LinearLayout [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   numLayouts: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ desenharVales()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CLP1415185454[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CLP</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   modbus: ModbusClient [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ DMOVDVP10MC(enderecoPara: String, enderecoDe: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ DVP10MC(enderecoDelta: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ DVP15MC(enderecoDelta: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ binarioParaWord16bits(bin: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ conectar()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ converter(endereco: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ converterEndereco(enderecoDelta: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ desconectar()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ dwPara2W(dword: int): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ endBitDVP15MC(end: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ endWordDVP15MC(end: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ enderecoEstatico(enderecoDelta: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ escreverBit(endereco: String, valor: boolean)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ escreverBitDVP10MC(endereco: String, valor: boolean)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ escreverDWordDVP10MC(enderecoDelta: String, dword: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ escreverFloat(endereco: String, valor: float)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ escreverInteiro(endereco: String, dword: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ escreverSequenciaBitsDVP10MC(endereco: String, valores: boolean[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ escreverWord(endereco: String, valor: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ escreverWordDVP10MC(endereco: String, valor: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ estaConectado(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ forceSetReset(endereco: String, valor: boolean)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inversor16Bits(word: int): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerAlarmes(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerBit(endereco: String): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerBitDVP10MC(endereco: String): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerDWord(enderecoDelta: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerDWordDVP10MC(enderecoDelta: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerFloat(endereco: String): float</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerFloat2(endereco: String): float</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerInteiro(endereco: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerInteiro2(endereco: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerInteiroSequencia(endereco: String, quantos: int): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerSequencia(endereco: String, numero: int): boolean[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerSequenciaBitsDVP10MC(endereco: String, num: int): boolean[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerSequenciaWordsDVP10MC(endereco: String, numero: int): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerWord(endereco: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerWordDVP10MC(endereco: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ palavrasAlarmes(): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sEscreverBit(endereco: String, valor: boolean)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sEscreverDWord(endereco: String, valor: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sEscreverFloat(endereco: String, valor: float)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sEscreverInteiro(endereco: String, dword: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sEscreverWord(endereco: String, valor: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sSetReset(endereco: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sWordParaBinario16Bits(word: int): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sbinarioParaWord16bits(bin: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sescreverDWord(enderecoDelta: String, dword: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sescreverWord(endereco: String, valor: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ slerWord(endereco: String, modbus: ModbusClient): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ wPDW(p0: int, p1: int): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ wordParaBinario16Bits(word: int): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+CamisaActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CamisaActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   btnCamisaVoltar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnLimpar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnRegistrar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtValeInicial: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   flangeDirAtivo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   flangeEsqAtivo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageFlangeDir: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageFlangeEsq: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageInicioVale: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageVale0: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   inicioVale0Ativo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   once: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   scrollLoop: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   valeAtual: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" ># escreve()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" ># ler()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Configuracoes2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Configuracoes</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   ids: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   parametros: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   referenciaCG: boolean [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- abrirProximaTela()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >- exibirDialogSenha()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onBackPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >- senhaCorreta(senha: String): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+DxSQLite82923178[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)DxSQLite</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   colData: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   colEletrodo: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   colEnviado: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   colMinutos: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   colOperador: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   colTurno: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   memoryTableName: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   nomeRobo: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   operatorTableName: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tableName: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addOperator(operatorName: String): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ alterarNumeroSerie(novoNumSerie: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarValorPreferencia(table: String, field: String, value: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ contarLinhas(query: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ deleteAll(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ deleteOperator(operatorId: int): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ editOperator(operatorId: int, newOperatorName: String): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inserirEletrodosLocal(cv: ContentValues)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inserirRecEletrodos(eletrodo: Eletrodo)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inserirReceita(receita: Receita)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerEletrodosLocal(): Map&lt;String, String&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerPreferencias(): Map&lt;String, Integer&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ listFromTable(tableName: String, columnNumber: int): ArrayList&lt;Pair&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mostrarBanco(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onCreate(sqLiteDatabase: SQLiteDatabase)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onUpgrade(sqLiteDatabase: SQLiteDatabase, i: int, i1: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ pegarMinutosTurnoAtual(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ pegarNumEletrodosTurnoAtual(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ pegarNumeroSerie(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ pegarRecEletrodo(id: int): Eletrodo</TD></TR>
+<TR><TD ALIGN="LEFT" >+ pegarReceita(id: int): Receita</TD></TR>
+<TR><TD ALIGN="LEFT" >+ tamanhoCursor(cursor: Cursor): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ updateEletrodosLocal(id: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ updateRecEletrodo(eletrodo: Eletrodo): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ updateReceita(receita: Receita): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+EditarActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)EditarActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   btnEdtVoltar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnReceitas: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnReferencia: Button [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Eletrodos2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Eletrodos</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   btnCalc: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnEditar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnRegistro: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnVoltar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   editar: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   scrollLoop: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   timer: Timer [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" ># escreve()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" ># ler()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onBackPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ pegarNumero(text: EditText): float</TD></TR>
+<TR><TD ALIGN="LEFT" >+ pegarNumeroInteiro(text: EditText): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ salvarNoDB(el: Eletrodo)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ toggleFields(status: boolean)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+InterfaceCLP1415185454[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)InterfaceCLP</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarAlarmes(scrollLoop: TextView)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ blink(view: View, status: boolean)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ btnMomentaneo(memoria: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ estaCarregando(context: Context): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ formatarNumXDigitos(num: int, x: int): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getCurrentSsid(context: Context): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerAlarmes(clp: CLP)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+JatoActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)JatoActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   btnJatoAtiva: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnJatoDesativa: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnJatoTeste: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnJatoVoltar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   first: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   fluxo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   habilitaJato: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgStatusFluxo: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgStatusJato: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   jatoAtivo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   timer: Timer [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tvStatusJato: TextView [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+MagazineActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)MagazineActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   auxBtnMagLiga: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   auxBtnMagReabastece: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnMagDesliga: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnMagLiga: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnMagReabastece: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnMagVoltar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   first: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgStatusMag: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   statusMagazine: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tvStatusMag: TextView [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+MainActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)MainActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   btnMainEditar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnManutencao: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnOperacao: Button [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ pegarNumSerie(): int</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ManualActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ManualActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   btnManExpulsa: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnManGarra: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnManJato: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnManTroca: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnManVoltar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   expulsaEletrodo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   first: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   garra: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   jato: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   trocaEletrodo: boolean [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ManutencaoActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ManutencaoActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   Entradas: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   Saidas: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   activators: LinearLayout [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   editavel: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   entradas: boolean[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   first: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   firstOut: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   inStatus: ImageView[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   myLayout: LinearLayout [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   outStatus: ImageView[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   saidas: boolean[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   selected: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   switch: Switch [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ MostrarEntradas()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ MostrarSaidas()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" ># onStart()</TD></TR>
+<TR><TD ALIGN="LEFT" ># onStop()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ModbusClient1415185454[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ModbusClient</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   baudrate: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   comPort: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   connectTimeout: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   crc: byte[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   debug: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   functionCode: byte [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   inStream: InputStream [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   ipAddress: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   length: byte[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   numberOfRetries: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   outStream: DataOutputStream [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   parity: Parity [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   port: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   protocolIdentifier: byte[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   quantity: byte[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   receiveData: byte[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   receiveDataChangedListener: List&lt;ReceiveDataChangedListener&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   sendData: byte[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   sendDataChangedListener: List&lt;SendDataChangedListener&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   serialPort: SerialPort [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   serialflag: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   startingAddress: byte[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   stopBits: StopBits [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   tcpClientSocket: Socket [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   transactionIdentifier: byte[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   udpFlag: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   unitIdentifier: byte [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Available(timeout: int): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Connect()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Connect(ipAddress: String, port: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Connect(comPort: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertDoubleToRegisters(doubleValue: double): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertDoubleToRegisters(doubleValue: double, registerOrder: RegisterOrder): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertFloatToRegisters(floatValue: float): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertFloatToRegisters(floatValue: float, registerOrder: RegisterOrder): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertIntToRegisters(intValue: int): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertIntToRegisters(intValue: int, registerOrder: RegisterOrder): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertLongToRegisters(longValue: long): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertLongToRegisters(longValue: int, registerOrder: RegisterOrder): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertRegistersToDouble(registers: int[]): double</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertRegistersToDouble(registers: int[], registerOrder: RegisterOrder): double</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertRegistersToFloat(registers: int[]): float</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertRegistersToFloat(registers: int[], registerOrder: RegisterOrder): float</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertRegistersToInt(registers: int[]): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertRegistersToInt(registers: int[], registerOrder: RegisterOrder): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertRegistersToLong(registers: int[]): long</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertRegistersToLong(registers: int[], registerOrder: RegisterOrder): long</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertRegistersToString(registers: int[], offset: int, stringLength: int): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ConvertStringToRegisters(stringToConvert: String): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Disconnect()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ReadCoils(startingAddress: int, quantity: int): boolean[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ReadDiscreteInputs(startingAddress: int, quantity: int): boolean[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ReadHoldingRegisters(startingAddress: int, quantity: int): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ReadInputRegisters(startingAddress: int, quantity: int): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ReadWriteMultipleRegisters(startingAddressRead: int, quantityRead: int, startingAddressWrite: int, values: int[]): int[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ WriteMultipleCoils(startingAddress: int, values: boolean[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ WriteMultipleRegisters(startingAddress: int, values: int[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ WriteSingleCoil(startingAddress: int, value: boolean)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ WriteSingleRegister(startingAddress: int, value: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ addReveiveDataChangedListener(toAdd: ReceiveDataChangedListener)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ addSendDataChangedListener(toAdd: SendDataChangedListener)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ calculateCRC(data: byte[], numberOfBytes: int, startByte: int): byte[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ toByteArray(value: int): byte[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ toByteArray(value: float): byte[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ toByteArrayDouble(value: double): byte[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ toByteArrayInt(value: int): byte[]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ toByteArrayLong(value: long): byte[]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Motores1114053203[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Motores</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ fazerHome(eixo: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Operacao1114053203[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Operacao</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   ativoC: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   ativoX: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   ativoZ: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   basico: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   calculo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   clp: CLP [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   emergencia: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   erro: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   homeC: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   homeX: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   homeZ: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   oleo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   operando: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   receita: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   simOleo: boolean [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ corrigirErro()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ fazerHome(eixo: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ get(clp: CLP)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ homeOK(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ motoresOK(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ msgIniciar(context: Context)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ msgOperar(context: Context)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ podeIniciar(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ podeOperar(): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+OperacaoActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)OperacaoActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   aguardaHomeAuto: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnJato: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnOpAcompanhamento: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnOpMagazine: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnOpReceita: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnOpSimuEletrodo: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnOpSimuFaisca: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnOpVoltar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnOscilador: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnVale: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnVelocidades: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   chapiscando: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   desativaJog: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   diagExecHomeAut: AlertDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   diagExecutandoHomeAuto: Builder [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   diagHomeAutoDone: Builder [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   edtValeAtual: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   executandoHome: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   first: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   first2: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   frisoDireito: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   frisoEsquerdo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   homeAutoDone: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   homeCDone: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   homeGdone: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   homeMotoresOk: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   homeXDone: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   homeZDone: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageCAtivo: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageD: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageE: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageGAtivo: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageOpInicia: ImageButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageOpInter: ImageButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageOpPara: ImageButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageXAtivo: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageZAtivo: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   intervalo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   once: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   operacao: Operacao [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   passoOp: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   pesoEletrodo: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   posC: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   posG: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   posX: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   posZ: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   progressBarChapisco: ProgressBar [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   progressBarFrisos: ProgressBar [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   progressoChapisco: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   progressoFrisos: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   qntEletConsumido: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   simulacaoEletrodo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   simulacaoFaisca: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   statusOperacao: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   statusPassoOperacao: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvOpEletConsumido: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvOpFrisoD: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvOpFrisoE: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvOpInicia: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvOpIntervalo: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvOpPara: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvOpPassoOp: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvOpPesoEletrodo: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvOpReceita: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvPosAtualC: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvPosAtualG: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvPosAtualX: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvPosAtualZ: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvProgressChapisco: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvProgressFrisos: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   txtFlanco: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   valeAtual: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" ># onStart()</TD></TR>
+<TR><TD ALIGN="LEFT" ># onStop()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+OsciladorActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)OsciladorActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   btnOscVoltar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnOsciladorRegistrar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   distancia: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   editDistanciaOscilacao: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   editFrequenciaOscilador: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   first: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   firstCLP: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   frequenciaOscilador: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageOsciladorAtiva: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imageOsciladorDesativa: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   oscAtivo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   scrollLoop: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   seekBarDist: SeekBar [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   seekBarVel: SeekBar [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   statusOscilador: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   textData: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   timer: Timer [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   txtOscDist: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   txtOscVel: TextView [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ registrar()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ParametrosActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ParametrosActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   btnRegistrar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnVoltar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   comprimentoPunho: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   delaySaidaMagazine: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtParamDelaySaidaMag: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtParamFaisca: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtParamPunho: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   first: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   tempoDeteccaoFaisca: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Registrar()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+PassoRotinaActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)PassoRotinaActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   btnAcompVoltar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   passoMag: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   passoOp: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   passoRotinaMagazine: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   passoRotinaOperacao: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   passoRotinaTrocaEletrodo: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   passoTroca: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tvRotinaMag: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tvRotinaOp: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tvRotinaTroca: TextView [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+PosicoesActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)PosicoesActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   bMostrar: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnJog: Button[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnRoloEntrada: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnRoloSaida: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtAxis: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtLabels: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtTexts: EditText[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   eixos: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   eixosNome: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   escrever: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   escrito: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   first: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   firstUI: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   focusedLayout: LinearLayout [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   jogLabels: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   lLayouts: LinearLayout[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   label: TextView[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   labels: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   llabels: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   memJog: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   memPos: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   pos: TextView[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   posEixos: float[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   posLabels: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   posLidas: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   posRoloEntrada: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   posRoloSaida: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   posicoes: float[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   reg: Button[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   regLabels: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   saida: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   scrollViewRoloEntrada: ScrollView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   selected: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   txtLabels: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   unidades: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   valores: float[] [0..*]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ escreverPosicoes()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ ler()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerPosicoes()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mostrar()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ReceitaActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ReceitaActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   auxCarregar: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnCarregar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnEletrodo: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnRecEdit: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnRecMenu: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnRecVoltar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnSalvar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   editMode: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtAltura: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtBase: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtCF: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtCI: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtComprimento: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtFriso: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtGF: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtNrRecCarregar: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtNrRecSalvar: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtPasso: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtProfundidade: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtValeEspecial: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtValeZero: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   edtVales: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgInicioFriso: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   receitaNr: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   senha: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   statusInicioFriso: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tela_login: View [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ carregarReceitaL()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ escreveReceita()</TD></TR>
+<TR><TD ALIGN="LEFT" ># habilitaCampos(habilita: boolean)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onBackPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ pegarNumero(text: EditText): float</TD></TR>
+<TR><TD ALIGN="LEFT" >+ pegarNumeroInteiro(text: EditText): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ trocarTela(cls: Class&lt;?&gt;)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Rede2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Rede</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ReferenciaActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ReferenciaActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   arm: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bHomeCOk: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bHomeGOk: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bHomeXOk: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bHomeZOk: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bHomingC: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bHomingG: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bHomingX: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bHomingZ: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bSensorC: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bSensorG: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bSensorX: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bSensorZ: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bStatusC: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bStatusG: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bStatusX: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bStatusZ: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   blink: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnAtivaManivela: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnRManual: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnRMenu: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnRPosicoes: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnRReceita: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnRVoltar: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnRefMagazine: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnZerarX: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   btnZerarZ: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   dumping: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   guide: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgHomeC: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgHomeG: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgHomeX: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgHomeZ: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgRefC: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgRefG: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgRefX: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgRefZ: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgStatusC: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgStatusG: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgStatusX: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   imgStatusZ: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   posC: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   posG: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   posX: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   posZ: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   referenciaX: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   referenciaZ: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   statusManivela: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tvPosAtualC: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tvPosAtualG: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tvPosAtualX: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tvPosAtualZ: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tvReferenciaX: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tvReferenciaZ: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tvStatusManivela: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   txtC: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   txtG: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   txtHomeC: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   txtHomeG: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   txtHomeX: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   txtHomeZ: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   txtUC: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   txtUX: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   txtUZ: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   txtX: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   txtZ: TextView [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- abrirProximaTela()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >- exibirDialogSenha()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onBackPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" ># onStart()</TD></TR>
+<TR><TD ALIGN="LEFT" >- senhaCorreta(senha: String): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ReferenciaCG2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ReferenciaCG</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   btnJog: Button[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   escrevendo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   escrever: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   first: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   posC: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   posG: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   refC: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   refG: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   selected: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvRefC: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   tvRefG: TextView [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+SNumSerieActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)SNumSerieActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   edtNumSerie: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   validar: Button [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ validar()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+StoreLogData1415185454[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)StoreLogData</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   fileWriter: FileWriter [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   filename: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Store(message: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Store(message: String, e: Exception)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Tempo82923178[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Tempo</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ CLPDate(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ CLPHour(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ TurnoAtual(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ Year(): int</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+VelOp2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)VelOp</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   atual: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   btnJog: Button[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   edtAxis: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   escrevendo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   escrever: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   first: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   label: TextView[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   memVels: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   pos: TextView[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   posLabels: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   selected: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   sliderLabels: Integer[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   tvLabels: Integer[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   tvPerVels: TextView[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   velSlider: SeekBar[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   velZ: SeekBar [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+VelRef2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)VelRef</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   atual: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   btnJog: Button[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   buttonLabel: Integer[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   edtAxis: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   eixosNome: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   escrevendo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   escrever: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   first: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   jogLabels: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   label: TextView[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   memJog: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   memVels: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   pos: TextView[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   posEixos: float[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   posLabels: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   selected: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   sliderLabels: Integer[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   tvLabels: Integer[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   tvPerVels: TextView[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   unidades: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   velSlider: SeekBar[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   velZ: SeekBar [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onBackPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" ># onStart()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+duoActivity2097108994[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)duoActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+   carregarEletrodo: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   carregarReceita: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   clp: CLP [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   conectado: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   consciencia: Thread [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   first: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   handler: Handler [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   imageErro: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   msg: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   naoConectou: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   preferences: Map&lt;String, Integer&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   returnCls: Class&lt;?&gt; [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   scanTime: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   scrollLoop: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   sql: DxSQLite [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   timer: Timer [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   txtCoord: TextView [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atualizarCLP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ atualizarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ criarTT(): TimerTask</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarUI()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ inicializarVars()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ lerAssetAlarmes(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onBackPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" ># onCreate(savedInstance: Bundle)</TD></TR>
+<TR><TD ALIGN="LEFT" ># onDestroy()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ trocarTela(cls: Class&lt;?&gt;)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+AcompanhamentoActivity2097108994 -> CLP1415185454[label="atualizarCLP() -> lerInteiroSequencia()"];
+AcompanhamentoActivity2097108994 -> DxSQLite82923178[label="inicializarUI() -> pegarReceita()"];
+CLP1415185454 -> ModbusClient1415185454[label="modbus
+[0..1]"];
+CamisaActivity2097108994 -> InterfaceCLP1415185454[label="inicializarUI() -> btnMomentaneo()"];
+InterfaceCLP1415185454 -> CLP1415185454[label="lerAlarmes() -> palavrasAlarmes()"];
+Operacao1114053203 -> CLP1415185454[label="clp
+[0..1]"];
+Operacao1114053203 -> Motores1114053203[label="msgOperar() -> fazerHome()"];
+OperacaoActivity2097108994 -> Operacao1114053203[label="operacao
+[0..1]"];
+SNumSerieActivity2097108994 -> DxSQLite82923178[label="validar() -> alterarNumeroSerie()"];
+duoActivity2097108994 -> AcompanhamentoActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> CLP1415185454[label="clp
+[0..1]"];
+duoActivity2097108994 -> CamisaActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> Configuracoes2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> DxSQLite82923178[label="sql
+[0..1]"];
+duoActivity2097108994 -> EditarActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> Eletrodos2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> JatoActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> MagazineActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> MainActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> ManualActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> ManutencaoActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> OperacaoActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> OsciladorActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> ParametrosActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> PassoRotinaActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> PosicoesActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> ReceitaActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> Rede2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> ReferenciaActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> ReferenciaCG2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> SNumSerieActivity2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> VelOp2097108994[arrowhead=none, arrowtail=empty, dir=both];
+duoActivity2097108994 -> VelRef2097108994[arrowhead=none, arrowtail=empty, dir=both];
+    
+}
+@enduml

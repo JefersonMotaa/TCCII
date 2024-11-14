@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:keepScreenOn="true"
+    tools:context="com.duo.superior.duo.OsciladorActivity">
+
+
+    <Button
+        android:id="@+id/btnOscVoltar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEletrodoCalc"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFF00"
+        android:text="VOLTAR"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="680dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="1036dp"
+        android:layout_height="214dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <ImageButton
+        android:id="@+id/imageOsciladorAtiva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#000000"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageOsciladorDesativa"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        app:srcCompat="@drawable/led_off" />
+
+    <ImageButton
+        android:id="@+id/imageOsciladorDesativa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#000000"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageOsciladorAtiva"
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        app:srcCompat="@drawable/led_off" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DESATIVA"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOsciladorDesativa"
+        app:layout_constraintEnd_toEndOf="@+id/imageOsciladorDesativa"
+        app:layout_constraintStart_toStartOf="@+id/imageOsciladorDesativa"
+        app:layout_constraintTop_toTopOf="@+id/imageOsciladorDesativa" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:text="ATIVA"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOsciladorAtiva"
+        app:layout_constraintEnd_toEndOf="@+id/imageOsciladorAtiva"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageOsciladorAtiva"
+        app:layout_constraintTop_toTopOf="@+id/imageOsciladorAtiva"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OSCILADOR"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView192"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Distância"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/edtFrequenciaOscilacao" />
+
+    <TextView
+        android:id="@+id/textView105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Frequência"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <Button
+        android:id="@+id/btnOscReg"
+        android:layout_width="130dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="16dp"
+        android:text="Registrar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <EditText
+        android:id="@+id/edtFrequenciaOscilacao"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/retangulo"
+        android:ems="10"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:nextFocusDown="@id/edtDistanciaOscilacao"
+        android:paddingLeft="10dp"
+        android:selectAllOnFocus="true"
+        android:text="0"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView105"
+        app:layout_constraintStart_toStartOf="@+id/textView105"
+        app:layout_constraintTop_toBottomOf="@+id/textView105" />
+
+    <EditText
+        android:id="@+id/edtDistanciaOscilacao"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/retangulo"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:paddingLeft="10dp"
+        android:selectAllOnFocus="true"
+        android:text="0"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtFrequenciaOscilacao"
+        app:layout_constraintStart_toStartOf="@+id/edtFrequenciaOscilacao"
+        app:layout_constraintTop_toBottomOf="@+id/textView192" />
+
+</android.support.constraint.ConstraintLayout>

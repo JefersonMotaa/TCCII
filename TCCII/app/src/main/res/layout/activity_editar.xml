@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul"
+    android:keepScreenOn="true"
+    tools:context="com.duo.superior.duo.EditarActivity">
+
+    <Button
+        android:id="@+id/btnEdtVoltar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFF00"
+        android:text="VOLTAR"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnReferencia"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFF00"
+        android:text="REFERÊNCIA"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnReceitas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReceitas"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFF00"
+        android:text="RECEITAS"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReferencia" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFF00"
+        android:text="REGISTRO"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReceitas" />
+
+</android.support.constraint.ConstraintLayout>

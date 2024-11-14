@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:keepScreenOn="true"
+    tools:context="com.duo.superior.duo.CamisaActivity">
+
+    <ImageView
+        android:id="@+id/imageCamisaVale0"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageCamisaFlangeDir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edtCamisaValeInicial"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/led_off" />
+
+    <ImageView
+        android:id="@+id/imageCamisaFlangeDir"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCamisaRegistrar"
+        app:layout_constraintTop_toBottomOf="@+id/imageCamisaVale0"
+        app:srcCompat="@drawable/led_off" />
+
+    <ImageView
+        android:id="@+id/imageCamisaFlangeEsq"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCamisaRegistrar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCamisaInicioVale"
+        app:srcCompat="@drawable/led_off" />
+
+    <ImageView
+        android:id="@+id/imageCamisaInicioVale"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageCamisaFlangeEsq"
+        app:layout_constraintEnd_toStartOf="@+id/edtCamisaValeInicial"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/led_off" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="INÍCIO\nVALE"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageCamisaInicioVale"
+        app:layout_constraintTop_toTopOf="@+id/imageCamisaInicioVale" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="INICIO\nESQ"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageCamisaFlangeEsq"
+        app:layout_constraintTop_toTopOf="@+id/imageCamisaFlangeEsq" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="INICIO\nVALE 0"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageCamisaVale0"
+        app:layout_constraintTop_toTopOf="@+id/imageCamisaVale0" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="INICIO\nDIR"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageCamisaFlangeDir"
+        app:layout_constraintTop_toTopOf="@+id/imageCamisaFlangeDir" />
+
+    <EditText
+        android:id="@+id/edtCamisaValeInicial"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/retangulo"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:paddingLeft="10dp"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCamisaRegistrar"
+        app:layout_constraintEnd_toStartOf="@+id/imageCamisaVale0"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageCamisaInicioVale"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnCamisaRegistrar"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:text="REGISTRAR"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageCamisaFlangeDir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageCamisaFlangeEsq"
+        app:layout_constraintTop_toBottomOf="@+id/edtCamisaValeInicial" />
+
+    <Button
+        android:id="@+id/btnCamisaLimpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="LIMPAR"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtCamisaValeInicial"
+        app:layout_constraintEnd_toEndOf="@+id/edtCamisaValeInicial"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/edtCamisaValeInicial" />
+
+    <Button
+        android:id="@+id/btnCamisaVoltar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFF00"
+        android:text="VOLTAR"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="CAMISA"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,101 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Marcelo/AppData/Local/Android/Sdk/platforms/android-29/data/res/layout/simple_list_item_1.xml" value="0.14765625" />
+        <entry key="..\:/Users/Marcelo/Documents/SOFTWARE/REV0 - ANDROID/Duo/app/src/main/res/drawable/thumb_image.xml" value="0.159765625" />
+        <entry key="..\:/Users/Marcelo/Documents/SOFTWARE/REV0 - ANDROID/Duo/app/src/main/res/layout-sw600dp/activity_eletrodo.xml" value="0.25" />
+        <entry key="..\:/Users/Marcelo/Documents/SOFTWARE/REV0 - ANDROID/Duo/app/src/main/res/layout-sw600dp/activity_motores.xml" value="0.33" />
+        <entry key="..\:/Users/Marcelo/Documents/SOFTWARE/REV0 - ANDROID/Duo/app/src/main/res/layout-sw600dp/activity_operacao.xml" value="0.5" />
+        <entry key="..\:/Users/Marcelo/Documents/SOFTWARE/REV0 - ANDROID/Duo/app/src/main/res/layout-sw600dp/activity_pre_ajustes.xml" value="0.33" />
+        <entry key="..\:/Users/Marcelo/Documents/SOFTWARE/REV0 - ANDROID/Duo/app/src/main/res/layout-sw600dp/activity_receita.xml" value="0.23625" />
+        <entry key="..\:/Users/Marcelo/Documents/SOFTWARE/REV0 - ANDROID/Duo/app/src/main/res/layout-sw600dp/activity_referencia.xml" value="0.25" />
+        <entry key="..\:/Users/Marcelo/Documents/SOFTWARE/REV0 - ANDROID/Duo/app/src/main/res/layout/activity_acompanhamento.xml" value="0.33" />
+        <entry key="..\:/Users/Marcelo/Documents/SOFTWARE/REV0 - ANDROID/Duo/app/src/main/res/layout/activity_lubrificacao.xml" value="0.22" />
+        <entry key="..\:/Users/Marcelo/Documents/SOFTWARE/REV0 - ANDROID/Duo/app/src/main/res/layout/activity_oscilador.xml" value="0.2" />
+        <entry key="..\:/Users/Marcelo/Documents/SOFTWARE/REV0 - ANDROID/Duo/app/src/main/res/layout/lista_acompanhamento.xml" value="0.22" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/drawable/border_shadow.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/drawable/custom_thumb.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/drawable/guide.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/drawable/rectangle.xml" value="0.148" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/drawable/retangulo.xml" value="0.148" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/drawable/seekbar_progress.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/drawable/seekbar_style.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/drawable/thumb.xml" value="0.174" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout-sw320dp/activity_manual.xml" value="0.25" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout-sw320dp/activity_operacao.xml" value="0.11030354852501069" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout-sw320dp/activity_referencia.xml" value="0.25" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout-sw480dp/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout-sw600dp/activity_manual.xml" value="0.16" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout-sw600dp/activity_manutencao.xml" value="0.10208333333333333" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout-sw600dp/activity_operacao.xml" value="0.18" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout-sw600dp/activity_principal.xml" value="0.18" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout-sw600dp/activity_referencia.xml" value="0.18" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout-sw720dp/activity_receita.xml" value="0.20473372781065088" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_configuracoes.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_main.xml" value="0.18418079096045198" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_manual.xml" value="0.14" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_manutencao.xml" value="0.18" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_motores.xml" value="0.5821428571428572" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_operacao.xml" value="0.5" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_posicoes.xml" value="0.14" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_posicoes2.xml" value="0.10208333333333333" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_principal.xml" value="0.18" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_receita.xml" value="0.6178571428571429" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_rede.xml" value="0.5" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_referencia.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_referencia_cg.xml" value="0.22" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_vel_op.xml" value="0.18" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/activity_vel_ref.xml" value="0.18" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/custombar.xml" value="0.22" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/item_operator.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/jog_control.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/tela_login.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/Duo Superior/app/src/main/res/layout/vel_control.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout-sw320dp/activity_receita.xml" value="0.1421875" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout-sw480dp/activity_receita.xml" value="0.34125" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout-sw600dp/activity_eletrodo.xml" value="0.14" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout-sw600dp/activity_operacao.xml" value="0.33" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout-sw600dp/activity_receita.xml" value="0.2666015625" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout-sw600dp/activity_referencia.xml" value="0.5" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout-sw720dp/activity_receita.xml" value="0.2106508875739645" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout/activity_camisa.xml" value="0.15" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout/activity_manutencao.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout/activity_receita.xml" value="1.3714285714285714" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout/activity_rede.xml" value="0.75" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout/activity_referencia.xml" value="0.5822368421052632" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout/activity_referencia_cg.xml" value="0.2" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout/lista_operadores.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Desktop/tablet_RBS15MC/app/src/main/res/layout/vel_control.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Documents/GitHub/tablet_RBS15MC/app/src/main/res/layout-sw320dp/activity_main.xml" value="0.13125" />
+        <entry key="..\:/Users/SOFTWARE/Documents/GitHub/tablet_RBS15MC/app/src/main/res/layout-sw320dp/activity_operacao.xml" value="0.5" />
+        <entry key="..\:/Users/SOFTWARE/Documents/GitHub/tablet_RBS15MC/app/src/main/res/layout-sw320dp/activity_principal.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Documents/GitHub/tablet_RBS15MC/app/src/main/res/layout-sw320dp/custombar.xml" value="0.22" />
+        <entry key="..\:/Users/SOFTWARE/Documents/GitHub/tablet_RBS15MC/app/src/main/res/layout-sw480dp/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Documents/GitHub/tablet_RBS15MC/app/src/main/res/layout-sw600dp/activity_eletrodo.xml" value="0.12" />
+        <entry key="..\:/Users/SOFTWARE/Documents/GitHub/tablet_RBS15MC/app/src/main/res/layout-sw600dp/activity_operacao.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Documents/GitHub/tablet_RBS15MC/app/src/main/res/layout-sw600dp/activity_principal.xml" value="0.1" />
+        <entry key="..\:/Users/SOFTWARE/Documents/GitHub/tablet_RBS15MC/app/src/main/res/layout/activity_inicio_rapido3.xml" value="0.10520833333333333" />
+        <entry key="..\:/Users/SOFTWARE/Documents/GitHub/tablet_RBS15MC/app/src/main/res/layout/activity_main.xml" value="0.18736059479553904" />
+        <entry key="..\:/Users/SOFTWARE/Documents/GitHub/tablet_RBS15MC/app/src/main/res/layout/activity_oscilador.xml" value="0.10520833333333333" />
+        <entry key="..\:/Users/SOFTWARE/Documents/GitHub/tablet_RBS15MC/app/src/main/res/layout/custombar.xml" value="0.1" />
+        <entry key="..\:/Users/mcsup/OneDrive/Software/SOFTWARE/REV0 - ANDROID/Duo/app/src/main/res/layout-sw600dp/activity_operacao.xml" value="0.2" />
+        <entry key="..\:/Users/mcsup/OneDrive/Software/SOFTWARE/REV0 - ANDROID/Duo/app/src/main/res/layout/activity_operacao.xml" value="0.8009868421052632" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="Duo.app" />
+      </set>
+    </option>
+  </component>
+</project>

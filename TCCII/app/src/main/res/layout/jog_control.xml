@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <Button
+        android:id="@+id/btnPMinus"
+        android:layout_width="112dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:layout_marginBottom="76dp"
+        android:text="+"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="+" />
+
+    <Button
+        android:id="@+id/btnPPlus"
+        android:layout_width="112dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:text="-"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPMinus"
+        app:layout_constraintEnd_toStartOf="@+id/btnPMinus"
+        tools:text="-" />
+
+    <Button
+        android:id="@+id/btnPZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Z"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPX"
+        app:layout_constraintEnd_toStartOf="@+id/btnPX"
+        app:layout_constraintTop_toTopOf="@+id/btnPX"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Z" />
+
+    <Button
+        android:id="@+id/btnPX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="X"
+        app:layout_constraintBottom_toTopOf="@+id/btnPPlus"
+        app:layout_constraintEnd_toEndOf="@+id/btnPPlus"
+        tools:text="X" />
+
+    <Button
+        android:id="@+id/btnPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="C"
+        app:layout_constraintBottom_toTopOf="@+id/btnPMinus"
+        app:layout_constraintStart_toStartOf="@+id/btnPMinus"
+        tools:text="C" />
+
+    <Button
+        android:id="@+id/btnPG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="G"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPC"
+        app:layout_constraintStart_toEndOf="@+id/btnPC"
+        app:layout_constraintTop_toTopOf="@+id/btnPC"
+        tools:text="G" />
+
+    <TextView
+        android:id="@+id/tvPPosZ"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="132dp"
+        android:textColor="#F1EEEE"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/btnPZ"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPPosX"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#FAF3F3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvPPosZ"
+        app:layout_constraintStart_toStartOf="@+id/tvPPosZ"
+        app:layout_constraintTop_toBottomOf="@+id/tvPPosZ" />
+
+    <TextView
+        android:id="@+id/tvPPosC"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#FAF9F9"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/btnPC"
+        app:layout_constraintTop_toTopOf="@+id/tvPPosZ" />
+
+    <TextView
+        android:id="@+id/tvPPosG"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#F8F7F7"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvPPosC"
+        app:layout_constraintStart_toStartOf="@+id/tvPPosC"
+        app:layout_constraintTop_toBottomOf="@+id/tvPPosC" />
+</merge>

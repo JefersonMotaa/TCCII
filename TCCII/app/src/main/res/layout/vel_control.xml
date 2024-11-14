@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/txtVMZ"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="8dp"
+        android:text="Velocidade Z"
+        android:textColor="#F8F8F8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVMX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Velocidade X"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/velVMZ"
+        app:layout_constraintStart_toStartOf="@+id/velVMZ"
+        app:layout_constraintTop_toBottomOf="@+id/velVMZ" />
+
+    <TextView
+        android:id="@+id/txtVMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Velocidade C"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/velVMX"
+        app:layout_constraintStart_toStartOf="@+id/velVMX"
+        app:layout_constraintTop_toBottomOf="@+id/velVMX" />
+
+
+    <TextView
+        android:id="@+id/txtVMG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Velocidade G"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/velVMC"
+        app:layout_constraintStart_toStartOf="@+id/velVMC"
+        app:layout_constraintTop_toBottomOf="@+id/velVMC" />
+
+    <SeekBar
+        android:id="@+id/velVMZ"
+        android:layout_width="355dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:theme="@style/MySeekBar"
+        android:thumb="@drawable/thumb"
+        app:layout_constraintEnd_toEndOf="@+id/txtVMZ"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/txtVMZ"
+        app:layout_constraintTop_toBottomOf="@+id/txtVMZ" />
+
+    <SeekBar
+        android:id="@+id/velVMX"
+        android:layout_width="355dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:theme="@style/MySeekBar"
+        android:thumb="@drawable/thumb"
+        app:layout_constraintEnd_toEndOf="@+id/txtVMX"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/txtVMX"
+        app:layout_constraintTop_toBottomOf="@+id/txtVMX" />
+
+    <SeekBar
+        android:id="@+id/velVMC"
+        android:layout_width="355dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:theme="@style/MySeekBar"
+        android:thumb="@drawable/thumb"
+        app:layout_constraintEnd_toEndOf="@+id/txtVMC"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/txtVMC"
+        app:layout_constraintTop_toBottomOf="@+id/txtVMC" />
+
+    <SeekBar
+        android:id="@+id/velVMG"
+        android:layout_width="355dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:theme="@style/MySeekBar"
+        android:thumb="@drawable/thumb"
+        app:layout_constraintEnd_toEndOf="@+id/txtVMG"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/txtVMG"
+        app:layout_constraintTop_toBottomOf="@+id/txtVMG" />
+
+    <TextView
+        android:id="@+id/tvPerMZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0%"
+        android:textColor="#F8F5F5"
+        app:layout_constraintBottom_toTopOf="@+id/velVMZ"
+        app:layout_constraintEnd_toEndOf="@+id/velVMZ"
+        app:layout_constraintStart_toStartOf="@+id/velVMZ" />
+
+    <TextView
+        android:id="@+id/tvPerMX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0%"
+        android:textColor="#FBFBFB"
+        app:layout_constraintBottom_toTopOf="@+id/velVMX"
+        app:layout_constraintEnd_toEndOf="@+id/velVMX"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="@+id/velVMX" />
+
+    <TextView
+        android:id="@+id/tvPerMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0%"
+        android:textColor="#FBF9F9"
+        app:layout_constraintBottom_toTopOf="@+id/velVMC"
+        app:layout_constraintEnd_toEndOf="@+id/velVMC"
+        app:layout_constraintStart_toStartOf="@+id/velVMC" />
+
+    <TextView
+        android:id="@+id/tvPerMG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0%"
+        android:textColor="#FAF8F8"
+        app:layout_constraintBottom_toTopOf="@+id/velVMG"
+        app:layout_constraintEnd_toEndOf="@+id/velVMG"
+        app:layout_constraintStart_toStartOf="@+id/velVMG" />
+
+</merge>

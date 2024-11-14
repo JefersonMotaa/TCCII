@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:keepScreenOn="true"
+    tools:context="com.duo.superior.duo.MainActivity">
+
+
+    <Button
+        android:id="@+id/btnRefVoltar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFF00"
+        android:text="VOLTAR"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnRMagazine"
+        android:layout_width="175dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/btnPosicoes"
+        android:layout_alignStart="@+id/btnPosicoes"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/amareloBotao"
+        android:text="MAGAZINE"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRefMenu" />
+
+    <TextView
+        android:id="@+id/tvPosAtualZ"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:gravity="right"
+        android:text="0"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tvPosAtualX"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignStart="@+id/tvPosAtualZ"
+        android:layout_alignLeft="@+id/tvPosAtualZ"
+        android:layout_alignBottom="@+id/textView1"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView1"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toTopOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/btnRefMenu"
+        android:layout_width="175dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/amareloBotao"
+        android:text="MENU"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgStatusZAtivo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tvPosAtualZ"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@+id/btnJogZMinus"
+        android:layout_toRightOf="@+id/btnJogZMinus"
+        android:background="@drawable/led_off"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPosAtualZ"
+        app:layout_constraintStart_toEndOf="@+id/textView65"
+        app:layout_constraintTop_toTopOf="@+id/tvPosAtualZ" />
+
+    <ImageView
+        android:id="@+id/imgStatusRefZ"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tvPosAtualZ"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/btnJogZMinus"
+        android:layout_toRightOf="@+id/btnJogZMinus"
+        android:background="@drawable/led_off"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusZAtivo"
+        app:layout_constraintStart_toEndOf="@+id/imgStatusZAtivo"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusZAtivo" />
+
+    <ImageView
+        android:id="@+id/imgStatusRefX"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tvPosAtualZ"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/btnJogZMinus"
+        android:layout_toRightOf="@+id/btnJogZMinus"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusXAtivo"
+        app:layout_constraintStart_toEndOf="@+id/imgStatusXAtivo"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusXAtivo"
+        app:srcCompat="@drawable/led_off" />
+
+    <ImageView
+        android:id="@+id/imgStatusRefC"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tvPosAtualZ"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/btnJogZMinus"
+        android:layout_toRightOf="@+id/btnJogZMinus"
+        android:background="@drawable/led_off"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusCAtivo"
+        app:layout_constraintStart_toEndOf="@+id/imgStatusCAtivo"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusCAtivo" />
+
+    <ImageView
+        android:id="@+id/imgStatusRefG"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tvPosAtualG"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/btnJogGMinus"
+        android:layout_toRightOf="@+id/btnJogGMinus"
+        android:background="@drawable/led_off"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusGAtivo"
+        app:layout_constraintStart_toEndOf="@+id/imgStatusGAtivo"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusGAtivo" />
+
+    <Button
+        android:id="@+id/btnRReceita"
+        android:layout_width="175dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/btnRefMenu"
+        android:layout_alignStart="@+id/btnRefMenu"
+        android:layout_alignLeft="@+id/btnRefMenu"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/amareloBotao"
+        android:text="RECEITA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRManual" />
+
+    <Button
+        android:id="@+id/btnRPosicoes"
+        android:layout_width="175dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/btnRefMenu"
+        android:layout_alignStart="@+id/btnRefMenu"
+        android:layout_alignLeft="@+id/btnRefMenu"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/amareloBotao"
+        android:text="POSIÇÕES"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRReceita" />
+
+    <Button
+        android:id="@+id/btnPosicoes"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRReceita"
+        android:layout_alignStart="@+id/btnRReceita"
+        android:layout_alignLeft="@+id/btnRReceita"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/amareloBotao"
+        android:text="VALE 0"
+        android:textSize="32sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnRManual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRMagazine" />
+
+    <ImageView
+        android:id="@+id/imgStatusXAtivo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tvPosAtualX"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@+id/btnJogXMinus"
+        android:background="@drawable/led_off"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPosAtualX"
+        app:layout_constraintStart_toEndOf="@+id/textView66"
+        app:layout_constraintTop_toTopOf="@+id/tvPosAtualX" />
+
+    <TextView
+        android:id="@+id/tvPosAtualC"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignStart="@+id/tvPosAtualX"
+        android:layout_alignLeft="@+id/tvPosAtualX"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginTop="32dp"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvPosAtualG"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignStart="@+id/tvPosAtualX"
+        android:layout_alignLeft="@+id/tvPosAtualX"
+        android:layout_alignBottom="@+id/textView2"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView200"
+        app:layout_constraintStart_toEndOf="@+id/textView200"
+        app:layout_constraintTop_toTopOf="@+id/textView200"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:text="X"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:text="C"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView200"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:text="G"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvPosAtualC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imgStatusCAtivo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tvPosAtualC"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@+id/btnJogCMinus"
+        android:layout_toRightOf="@+id/btnJogCMinus"
+        android:background="@drawable/led_off"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPosAtualC"
+        app:layout_constraintStart_toEndOf="@+id/textView67"
+        app:layout_constraintTop_toTopOf="@+id/tvPosAtualC" />
+
+    <ImageView
+        android:id="@+id/imgStatusGAtivo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tvPosAtualG"
+        android:layout_marginStart="36dp"
+        android:background="@drawable/led_off"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPosAtualG"
+        app:layout_constraintStart_toEndOf="@+id/textView204"
+        app:layout_constraintTop_toTopOf="@+id/tvPosAtualG" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Z"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnAtivaManivela"
+        android:layout_width="228dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/amareloBotao"
+        android:text="JOG"
+        app:layout_constraintEnd_toStartOf="@+id/btnRefMenu"
+        app:layout_constraintTop_toBottomOf="@+id/btnRPosicoes" />
+
+    <Button
+        android:id="@+id/btnRManual"
+        android:layout_width="175dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/btnPosicoes"
+        android:layout_alignStart="@+id/btnRMagazine"
+        android:layout_alignLeft="@+id/btnRMagazine"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/amareloBotao"
+        android:text="MANUAL"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRMagazine" />
+
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:text="mm"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPosAtualZ"
+        app:layout_constraintStart_toEndOf="@+id/tvPosAtualZ" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:text="mm"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPosAtualX"
+        app:layout_constraintStart_toEndOf="@+id/tvPosAtualX" />
+
+    <ImageButton
+        android:id="@+id/imgStatusZHoming"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+
+        android:layout_toEndOf="@+id/btnJogZMinus"
+        android:layout_toRightOf="@+id/btnJogZMinus"
+
+        android:background="@color/zxing_viewfinder_laser"
+
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusRefZ"
+        app:layout_constraintStart_toEndOf="@+id/imgStatusRefZ"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusRefZ"
+        />
+
+    <ImageButton
+        android:id="@+id/imgStatusXHoming"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+
+        android:layout_toEndOf="@+id/btnJogZMinus"
+        android:layout_toRightOf="@+id/btnJogZMinus"
+
+        android:background="@color/zxing_viewfinder_laser"
+
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusRefX"
+        app:layout_constraintStart_toEndOf="@+id/imgStatusRefX"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusRefX" />
+
+    <ImageButton
+        android:id="@+id/imgStatusCHoming"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="24dp"
+
+        android:layout_toEndOf="@+id/btnJogZMinus"
+
+        android:background="@color/zxing_viewfinder_laser"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusRefC"
+        app:layout_constraintStart_toEndOf="@+id/imgStatusRefC"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusRefC"
+        />
+
+    <ImageButton
+        android:id="@+id/imgStatusGHoming"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/tvPosAtualG"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/btnJogGMinus"
+        android:background="@color/zxing_viewfinder_laser"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusRefG"
+        app:layout_constraintStart_toEndOf="@+id/imgStatusRefG"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusRefG"
+        />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:text=" º"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPosAtualC"
+        app:layout_constraintStart_toEndOf="@+id/tvPosAtualC" />
+
+    <TextView
+        android:id="@+id/textView204"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:text=" º"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPosAtualG"
+        app:layout_constraintStart_toEndOf="@+id/tvPosAtualG"
+        app:layout_constraintTop_toTopOf="@+id/tvPosAtualG"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnRVoltar"
+        android:layout_width="175dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/amareloBotao"
+        android:text="VOLTAR"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtStsHomingZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ativo"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusZAtivo"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusZAtivo"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusZAtivo"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusZAtivo" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ref."
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusRefZ"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusRefZ"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusRefZ"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusRefZ"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <TextView
+        android:id="@+id/txtStsHomingX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ativo"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusXAtivo"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusXAtivo"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusXAtivo"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusXAtivo" />
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ref."
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusRefX"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusRefX"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusRefX"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusRefX"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <TextView
+        android:id="@+id/txtHomeX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fazer\nHome"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusXHoming"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusXHoming"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusXHoming"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusXHoming" />
+
+    <TextView
+        android:id="@+id/txtHomeZ"
+        android:layout_width="43dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="Fazer\nHome"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusZHoming"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusZHoming"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusZHoming"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusZHoming" />
+
+    <TextView
+        android:id="@+id/txtStsHomingC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ativo"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusCAtivo"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusCAtivo"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusCAtivo"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusCAtivo"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <TextView
+        android:id="@+id/txtStsHomingG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ativo"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusGAtivo"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusGAtivo"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusGAtivo"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusGAtivo"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <TextView
+        android:id="@+id/textView101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ref."
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusRefC"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusRefC"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusRefC"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusRefC" />
+
+    <TextView
+        android:id="@+id/txtHomeC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fazer\nHome"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusCHoming"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusCHoming"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusCHoming"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusCHoming" />
+
+    <TextView
+        android:id="@+id/txtHomeG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fazer\nHome"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusGHoming"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusGHoming"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusGHoming"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusGHoming" />
+
+    <TextView
+        android:id="@+id/tvStatusManivela"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:text="Manivela Ativada"
+        android:textColor="#FDFDFD"
+        android:textFontWeight="800"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="700dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="104dp"
+        android:src="@drawable/guide"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/arm"
+        android:layout_width="101dp"
+        android:layout_height="243dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/rectangle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnOpZerarZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="108dp"
+        android:text="ZERAR Z"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView200" />
+
+    <Button
+        android:id="@+id/btnOpZerarX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="ZERAR X"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/btnOpZerarZ"
+        app:layout_constraintStart_toEndOf="@+id/btnOpZerarZ"
+        app:layout_constraintTop_toTopOf="@+id/btnOpZerarZ" />
+
+    <TextView
+        android:id="@+id/tvReferenciaZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpZerarZ"
+        app:layout_constraintEnd_toEndOf="@+id/btnOpZerarZ"
+        app:layout_constraintStart_toStartOf="@+id/btnOpZerarZ" />
+
+    <TextView
+        android:id="@+id/tvReferenciaX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpZerarX"
+        app:layout_constraintEnd_toEndOf="@+id/btnOpZerarX"
+        app:layout_constraintStart_toStartOf="@+id/btnOpZerarX" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Referencia\nvale 0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tvReferenciaZ"
+        app:layout_constraintEnd_toEndOf="@+id/btnOpZerarZ"
+        app:layout_constraintStart_toStartOf="@+id/btnOpZerarZ" />
+
+    <TextView
+        android:id="@+id/textView106"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Referencia\nprofundidade"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tvReferenciaX"
+        app:layout_constraintEnd_toEndOf="@+id/btnOpZerarX"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/btnOpZerarX" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ref."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusRefG"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusRefG"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusRefG"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusRefG" />
+</android.support.constraint.ConstraintLayout>
+
+
+

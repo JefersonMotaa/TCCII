@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/black"
+    android:keepScreenOn="true"
+    tools:context="com.duo.superior.duo.JatoActivity">
+
+    <Button
+        android:id="@+id/btnJatoVoltar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEletrodoCalc"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFF00"
+        android:text="VOLTAR"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnJatoAtiva"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:text="LIGA"
+        app:layout_constraintEnd_toStartOf="@+id/btnJatoDesativa"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnJatoDesativa" />
+
+    <ImageView
+        android:id="@+id/imgStatusJato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btnJatoDesativa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55"
+        app:srcCompat="@drawable/led_cinza"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnJatoDesativa"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="228dp"
+        android:text="DESLIGA"
+        app:layout_constraintEnd_toStartOf="@+id/btnJatoTeste"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnJatoAtiva"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+    <Button
+        android:id="@+id/btnJatoTeste"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:text="TESTE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnJatoDesativa"
+        app:layout_constraintTop_toTopOf="@+id/btnJatoDesativa" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JATO"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvStatusJato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desligado"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStatusJato"
+        app:layout_constraintEnd_toEndOf="@+id/imgStatusJato"
+        app:layout_constraintStart_toStartOf="@+id/imgStatusJato"
+        app:layout_constraintTop_toTopOf="@+id/imgStatusJato" />
+
+</android.support.constraint.ConstraintLayout>

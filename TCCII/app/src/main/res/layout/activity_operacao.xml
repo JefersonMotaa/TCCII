@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:backgroundTintMode="add"
+    android:keepScreenOn="true"
+    tools:context="com.duo.superior.duo.OperacaoActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="C"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="G"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ImageView
+        android:id="@+id/imageCAtivo"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignBottom="@+id/tvPosAtualZ"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/btnJogZMinus"
+        android:layout_toRightOf="@+id/btnJogZMinus"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:srcCompat="@drawable/led_off" />
+
+    <ImageView
+        android:id="@+id/imageGAtivo"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignBottom="@+id/tvPosAtualZ"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/btnJogZMinus"
+        android:layout_toRightOf="@+id/btnJogZMinus"
+        app:layout_constraintBottom_toBottomOf="@+id/textView19"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@drawable/led_off" />
+
+    <TextView
+        android:id="@+id/tvOpPosC"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="@color/zxing_status_text"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintStart_toEndOf="@+id/imageCAtivo"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvOpPosG"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="@color/zxing_status_text"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageGAtivo"
+        app:layout_constraintStart_toEndOf="@+id/imageGAtivo"
+        app:layout_constraintTop_toTopOf="@+id/imageGAtivo" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text=" °"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOpPosG"
+        app:layout_constraintStart_toEndOf="@+id/tvOpPosG"
+        app:layout_constraintTop_toTopOf="@+id/tvOpPosG" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text=" °"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOpPosC"
+        app:layout_constraintStart_toEndOf="@+id/tvOpPosC"
+        app:layout_constraintTop_toTopOf="@+id/tvOpPosC" />
+
+    <Button
+        android:id="@+id/btnOpVoltar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEletrodoCalc"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFF00"
+        android:text="VOLTAR"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageZAtivo"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignBottom="@+id/tvPosAtualZ"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/btnJogZMinus"
+        android:layout_toRightOf="@+id/btnJogZMinus"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:srcCompat="@drawable/led_off" />
+
+    <ImageView
+        android:id="@+id/imageXAtivo"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignBottom="@+id/tvPosAtualZ"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toEndOf="@+id/btnJogZMinus"
+        android:layout_toRightOf="@+id/btnJogZMinus"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:srcCompat="@drawable/led_off" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:text="Z"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageOpInicia" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="X"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/tvOpPosZ"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="@color/zxing_status_text"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/imageZAtivo"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/tvOpPosX"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="@color/zxing_status_text"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/imageXAtivo"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text=" mm"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOpPosZ"
+        app:layout_constraintStart_toEndOf="@+id/tvOpPosZ"
+        app:layout_constraintTop_toTopOf="@+id/tvOpPosZ" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text=" mm"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOpPosX"
+        app:layout_constraintStart_toEndOf="@+id/tvOpPosX"
+        app:layout_constraintTop_toTopOf="@+id/tvOpPosX" />
+
+    <ImageButton
+        android:id="@+id/imageOpInter"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="48dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@+id/imageOpPara"
+        app:layout_constraintTop_toTopOf="@+id/imageOpPara"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageOpInicia"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageOperacaoE"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvOpIntervalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INTERVALO"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOpInter"
+        app:layout_constraintEnd_toEndOf="@+id/imageOpInter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageOpInter"
+        app:layout_constraintTop_toTopOf="@+id/imageOpInter" />
+
+    <Button
+        android:id="@+id/btnOpJato"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFF00"
+        android:text="jato"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOpOscilador"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFF00"
+        android:text="OSCILADOR"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpJato" />
+
+    <Button
+        android:id="@+id/btnOpMagazine"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFF00"
+        android:text="Magazine"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpVelocidades2" />
+
+    <Button
+        android:id="@+id/btnOpAcompanhamento"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFF00"
+        android:text="Acompanhamento"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpMagazine" />
+    <Button
+        android:id="@+id/btnOpVelocidades2"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFF00"
+        android:text="Velocidades"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpOscilador" />
+
+    <ImageButton
+        android:id="@+id/imageOpPara"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="48dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@+id/imageOpInicia"
+        app:layout_constraintTop_toTopOf="@+id/imageOpInicia"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnOpReceita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFFF00"
+        android:text="RECEITA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOperacaoVale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFFF00"
+        android:text="VALE"
+        app:layout_constraintStart_toEndOf="@+id/btnOpReceita"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/edtOperacaoVale"
+        android:layout_width="82dp"
+        android:layout_height="52dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|center_horizontal"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnOperacaoVale"
+        app:layout_constraintStart_toStartOf="@+id/btnOperacaoVale"
+        app:layout_constraintTop_toBottomOf="@+id/btnOperacaoVale" />
+
+    <TextView
+        android:id="@+id/tvOpReceita"
+        android:layout_width="82dp"
+        android:layout_height="52dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center|center_horizontal"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnOpReceita"
+        app:layout_constraintStart_toStartOf="@+id/btnOpReceita"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpReceita" />
+
+    <ImageView
+        android:id="@+id/imageOperacaoD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/led_cinza"
+        android:scaleX=".75"
+        android:scaleY=".75"
+        app:layout_constraintStart_toEndOf="@+id/imageOperacaoE"
+        app:layout_constraintTop_toTopOf="@+id/imageOperacaoE" />
+
+    <ImageView
+        android:id="@+id/imageOperacaoE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/led_cinza"
+        android:scaleX=".75"
+        android:scaleY=".75"
+        app:layout_constraintStart_toEndOf="@+id/edtOperacaoVale"
+        app:layout_constraintTop_toBottomOf="@+id/txtFlanco" />
+
+    <TextView
+        android:id="@+id/tvOpFrisoE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOperacaoE"
+        app:layout_constraintEnd_toEndOf="@+id/imageOperacaoE"
+        app:layout_constraintStart_toStartOf="@+id/imageOperacaoE"
+        app:layout_constraintTop_toTopOf="@+id/imageOperacaoE" />
+
+    <TextView
+        android:id="@+id/tvOpFrisoD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOperacaoD"
+        app:layout_constraintEnd_toEndOf="@+id/imageOperacaoD"
+        app:layout_constraintStart_toStartOf="@+id/imageOperacaoD"
+        app:layout_constraintTop_toTopOf="@+id/imageOperacaoD" />
+
+    <TextView
+        android:id="@+id/tvOpInicia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INICIA"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOpInicia"
+        app:layout_constraintEnd_toEndOf="@+id/imageOpInicia"
+        app:layout_constraintStart_toStartOf="@+id/imageOpInicia"
+        app:layout_constraintTop_toTopOf="@+id/imageOpInicia" />
+
+    <TextView
+        android:id="@+id/tvOpPara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PARA"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOpPara"
+        app:layout_constraintEnd_toEndOf="@+id/imageOpPara"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/imageOpPara"
+        app:layout_constraintTop_toTopOf="@+id/imageOpPara" />
+
+    <TextView
+        android:id="@+id/txtFlanco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Flanco atual"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageOperacaoD"
+        app:layout_constraintEnd_toEndOf="@+id/imageOperacaoD"
+        app:layout_constraintStart_toStartOf="@+id/imageOperacaoE" />
+
+    <ProgressBar
+        android:id="@+id/progressBarChapisco"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="285dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/tvProgressChapisco" />
+
+    <ProgressBar
+        android:id="@+id/progressBarFrisos"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="285dp"
+        android:layout_height="31dp"
+        app:layout_constraintStart_toStartOf="@+id/progressBarChapisco"
+        app:layout_constraintTop_toBottomOf="@+id/tvProgressoFrisos" />
+
+    <TextView
+        android:id="@+id/tvProgressoFrisos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarFrisos"
+        app:layout_constraintStart_toStartOf="@+id/progressBarFrisos"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarChapisco" />
+
+    <TextView
+        android:id="@+id/tvOpEletConsumido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#FDFDFD"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarFrisos"
+        app:layout_constraintStart_toStartOf="@+id/progressBarFrisos"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarFrisos" />
+
+    <TextView
+        android:id="@+id/tvProgressChapisco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarChapisco"
+        app:layout_constraintStart_toStartOf="@+id/progressBarChapisco"
+        app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/btnOpSimuEletrodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:text="SIMULAÇÃO\nELETRODO"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/imageOperacaoD"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOpSimuFaisca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:text="SIMULÇÃO\nFAISCA"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/btnOpSimuEletrodo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOpPassoOp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Status do robô:"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tvOpPassoOp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOpPesoEletrodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tvOpEletConsumido"
+        app:layout_constraintStart_toStartOf="@+id/tvOpEletConsumido"
+        app:layout_constraintTop_toBottomOf="@+id/tvOpEletConsumido" />
+
+</android.support.constraint.ConstraintLayout>
